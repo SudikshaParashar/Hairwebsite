@@ -1,0 +1,116 @@
+<html>
+    <style>
+   body{ 
+	overflow-x:hidden;
+}
+.e1_2 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:1604px;
+	height:990px;
+	position:absolute;
+}
+.e1_3 { 
+	background-color:rgba(23.587496504187584, 12.186873257160187, 12.186873257160187, 1);
+	width:1053px;
+	height:281px;
+	position:absolute;
+	left:261px;
+	top:170px;
+	border-top-left-radius:186px;
+	border-top-right-radius:186px;
+	border-bottom-left-radius:186px;
+	border-bottom-right-radius:186px;
+}
+.e1_4 { 
+	color:rgba(159.5874997973442, 74.47416454553604, 74.47416454553604, 1);
+	width:840px;
+	height:116px;
+	position:absolute;
+	left:402px;
+	top:252px;
+	font-family:Inter;
+	text-align:center;
+	font-size:96px;
+	letter-spacing:0;
+}
+
+.user-box{
+            display:flex;
+            flex-direction:row;
+            margin-left:20px;
+        }
+        .login-box .user-box input {
+                    width: 100%;
+                    padding: 10px 0;
+                    
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 30px;
+                    border: 1px solid #fff;
+                    padding-left:20px;
+                    outline: none;
+                    background: transparent;
+         }
+
+         .login-box .user-box label {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 10px 0;
+                    padding-left:20px;
+                    font-size: 16px;
+                    color: #fff;
+                    pointer-events: none;
+                    transition:0.4s;
+                    
+          }
+          .login-box .user-box input:valid ~ label
+          {
+                    opacity:0.1;
+                    left: 0;
+                    color:  white;
+                    font-size: 17px;
+          }
+          .login-box .user-box input:focus ~ label
+           {
+                    
+                    left: 0;
+                    color:  rgb(10, 43, 28);
+                    font-size: 17px;
+           }
+           .login-box {
+            position: absolute;
+            margin-top: 24%;
+            background-color:rgba(50, 149, 100, 0.701);
+            left: 30%;
+            width: 50%;
+            padding: 40px;
+            padding-bottom: 10px;
+            transform: translate(-50%, -50%);
+            padding-left:60px;
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(159, 225, 247, 0.802);
+            border-radius: 10px;
+        }
+    </style>
+    <body>
+        <div class=e1_2>
+            <div class="e1_3"></div><span  class="e1_4">Book Appointment</span>
+          </div>
+          <form id="form1" method="post" runat="server"></form>
+          <div class="login-box">
+          <div >
+                <div class="user-box">
+                    <input type="datetime-local" id="Test_DatetimeLocal" runat="server" required="">
+                    <label>Appointment Date</label>
+                </div>
+               
+                <button onserverclick="Submit" runat="server" id="Button1">
+                    SUBMIT
+                 </button>   
+            </form>
+        </div>
+    </div>   
+          
+    </body>
+</html>
